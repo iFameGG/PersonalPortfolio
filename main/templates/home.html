@@ -1,0 +1,82 @@
+<style>
+    .project-preview {
+        border: 5px solid;
+        border-radius: 15px;
+        width: 500px;
+        padding: 15px;
+        text-align: justify;
+        background-color: #252525;
+        color: #bc7dff;
+        flex-grow: 1;
+    }
+
+    .project-info {
+        padding: 10px;
+    }
+
+    .project-title {
+        display: inline;
+        text-align: center;
+    }
+
+    strong{
+        font-weight: bolder;
+        font-style: italic;
+    }
+    
+    .project-links {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding-top: 10;
+    }
+
+    .project-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+</style>
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="default-page">
+    <h1 class="page-h1">Hey, I'm Antonio Nardi</h1>
+
+    <div class="projects">
+        <h2 class="subtitle">Projects</h2>
+        <div class="project-list">
+            {% for project in projects %}
+            <div class="project-preview">
+                <div class="project-title">
+                    <h2 >{{ project.name }}</h2>
+                    <p style="font-style: italic;">{{ project.category }}</p>
+                </div>
+                <p class="project-info">{{ project.description }}</p>
+                <hr style="color: #bc7dff">
+                <p class="project-info">
+                    <strong>Tools:</strong> {{ project.tools }}
+                </p>
+                <hr style="color: #bc7dff">
+                <div class="project-links">
+                    <a href="{{ project.github }}" target="_blank" rel="noreferrer noopener">
+                        🔗 GitHub
+                    </a>
+                    {% if project.example == project.github %}
+                    {% else %}
+                    <a href="{{ project.example }}" target="_blank" rel="noreferrer noopener">
+                        🔗 Try Now!
+                    </a>
+                    {% endif %} 
+                </div>
+            </div>
+            {% endfor %}
+            
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

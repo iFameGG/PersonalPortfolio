@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fame's Portfolio</title>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/mononoki" type="text/css"/>
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/iFameGG/ArchFiles/main/favicon.ico"/>
+</head>
+<body>
+
+    <style>
+        body {
+            background-color: #bc7dff;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: mononokiRegular !important;
+        }
+
+        li, a, button {
+            color: #bc7dff;
+            text-decoration: none;
+        }
+
+        hr {
+            color: blueviolet;
+        }
+
+        .page-h1 {
+            margin: 20px;
+            font-size: 40px;
+            font-weight: bolder;
+            color: #252525;
+            text-decoration-color: #252525;
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+            text-decoration-skip: none;
+            text-decoration-thickness: 2px;
+        }
+        
+        .nav-el {
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 5%;
+            background-color: #252525;
+        }
+
+        .nav-li {
+            display: inline-block;
+            padding: 0px 40px;
+        }
+
+        .nav-li:hover {
+            color: blueviolet;
+            transition: all 0.3 ease 0s;
+            font-style: italic;
+            /* font-size: 22px; */
+        }
+
+        .nav-el:hover {
+            color: blueviolet;
+            transition: all 0.3 ease 0s;
+        }
+
+        .default-page {
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .subtitle {
+            text-decoration: underline;
+            text-decoration-skip: none;
+            text-decoration-thickness: 2px;
+            padding: 3px;
+        }
+
+    </style>
+    
+    {% include 'navbar.html' %}
+
+    {% block content %}
+
+    {% endblock %}
+
+    {% include 'footer.html' %}
+
+</body>
+</html>
