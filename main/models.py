@@ -9,3 +9,6 @@ class Project(models.Model):
     tools = models.CharField(max_length=200)
     category = models.CharField(max_length=200)
     rank = models.IntegerField(default=1)
+
+    def __str__(self):
+        return self.name
