@@ -8,3 +8,4 @@ class Project(models.Model):
     description = models.TextField()
     tools = models.CharField(max_length=200)
     category = models.CharField(max_length=200)
+    rank = models.IntegerField(default=1)
