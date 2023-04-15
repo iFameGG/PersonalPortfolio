@@ -23,7 +23,7 @@ ALLOWED_HOSTS = ["*"]
 # SESSION_COOKIE_SECURE = True
 # CSRF_COOKIE_SECURE = True
 # SECURE_HSTS_PRELOAD = True
-
+CSRF_TRUSTED_ORIGINS = ["*"]
 
 # Application definition
 
