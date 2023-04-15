@@ -1,4 +1,8 @@
 <style>
+    .default-page {
+        margin-top: 30px;
+    }
+
     .project-preview {
         border: 5px solid #252525;
         border-radius: 25px;
@@ -49,6 +53,13 @@
         margin-top: 5px;
         text-align: center;
     }
+
+    .education {
+        display:flex; 
+        justify-content:center; 
+        align-items:center; 
+        flex-direction:column;
+    }
 </style>
 
 {% extends 'base.html' %}
@@ -59,7 +70,7 @@
     <h1 class="page-h1">I'm Antonio Nardi</h1>
 
     <div class="main-section">
-        <h2 class="subtitle">My Projects</h2>
+        <h2 id="projects" class="subtitle">My Projects</h2>
         <div class="project-list">
             {% for project in projects %}
             <div class="project-preview">
@@ -89,6 +100,24 @@
             </div>
             {% endfor %}
             
+        </div>
+
+        <div class="education">
+            <hr style="margin-top: 20px; margin-bottom: 20px; width: 75%;">
+            <h2 id="about-me"  class="subtitle">About Me</h2>
+            <p style=" text-align: justify; text-justify: inter-word; padding: 15px 15px 0px 15px; width: 65%">
+                Hi there! I'm a 21-year-old data science aficionado from the Greater Montreal Area. I completed my 
+                diploma in Data Science from Concordia University and I'm currently pursuing my Google Data Analytics 
+                Certificate.
+                <br><br>
+                When I'm not crunching numbers, I enjoy watching various motorsports and hockey, and also playing hockey with friends. 
+                Ever since I was a kid, I've loved learning about how things work, and that curiosity continues to drive me today.
+                <br><br>
+                I pride myself on being resourceful and tenacious when it comes to solving problems and working 
+                on projects. I may not have years of experience under my belt, but I'm enthusiastic about learning 
+                and growing in this field, eager to take on new challenges, and contribute to a team that shares 
+                my passion for data science and analytics.
+            </p>
         </div>
     </div>
 </div>
