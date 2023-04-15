@@ -5,11 +5,11 @@ Learn the Django web framework to have it as a asset, when deploying future proj
 
 ## Methodology 
 1. Build a simple portfolio using the Django Framework
-    a. Have a main scrollable page with projects, about me section and contact info
-    b. Individual pages for each project and use a database to store project info and build pages dynamically
-    c. Create page for my resume
+    <br>a. Have a main scrollable page with projects, about me section and contact info
+    <br>b. Individual pages for each project and use a database to store project info and build pages dynamically
+    <br>c. Create page for my resume
 
 2. Deploy using Railway, since compute it is a cheap way to host the website
-    a. Host PostgreSQL database
-    b. Connect Repo to the railway project
-    c. Automatically deploy when a commit happens
+    <br>a. Host PostgreSQL database
+    <br>b. Connect Repo to the railway project
+    <br>c. Automatically deploy when a commit happens
