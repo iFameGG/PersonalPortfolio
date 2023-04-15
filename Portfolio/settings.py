@@ -19,11 +19,14 @@ ALLOWED_HOSTS = ["*"]
 
 # SECURE_HSTS_SECONDS = 518400
 # SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-# SECURE_SSL_REDIRECT = True
+SECURE_SSL_REDIRECT = True
 # SESSION_COOKIE_SECURE = True
 # CSRF_COOKIE_SECURE = True
 # SECURE_HSTS_PRELOAD = True
-CSRF_TRUSTED_ORIGINS = ["*"]
+CSRF_TRUSTED_ORIGINS = [
+    'https://www.antonio-nardi.com/',
+    'http://www.antonio-nardi.com/'
+]
 
 # Application definition
 
