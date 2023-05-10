@@ -91,7 +91,10 @@
                         </a>
                         {% if project.example == project.github %}
                         {% else %}
-                        <a href="{% url 'project' project.name %}">
+<!--                         <a href="{% url 'project' project.name %}">
+                            🔗 Try Now!
+                        </a> -->
+                        <a href="{{ project.example }}" target="_blank" rel="noreferrer noopener">
                             🔗 Try Now!
                         </a>
                         {% endif %} 
