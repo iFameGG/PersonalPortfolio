@@ -82,7 +82,7 @@ DATABASES = {
         'NAME': 'railway',  
         'USER': 'postgres',  
         'PASSWORD': os.environ["PASSWORD"],  
-        'HOST': os.environ["DB_URL"],  
+        'HOST': os.environ["DB_URL"], 
         'PORT': '6511' 
     }
 }
