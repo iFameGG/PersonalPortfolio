@@ -8,4 +8,7 @@ def home(request):
 
 def project(request, name):
     project = Project.objects.get(name=name)
-    return render (request, 'project_page.html', {'project':project})
+    return render(request, 'project_page.html', {'project':project})
+
+def resume(request):
+    return render(request, 'resume.html')
